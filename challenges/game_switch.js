@@ -20,17 +20,17 @@ function game(choice) {
     player = choice;
     ai = options[Math.floor(Math.random()*3)];
 
-    switch (choice) {
-        case player === rock && ai === scissors:
+    switch (true) {
+        case (player === rock && ai === scissors):
             console.log(`You win - ${player} vs ${ai}`);
             break;
-        case player === paper && ai === rock:
+        case (player === paper && ai === rock):
             console.log(`You win - ${player} vs ${ai}`);
             break;
-        case player === scissors && ai === paper:
+        case (player === scissors && ai === paper):
             console.log(`You win - ${player} vs ${ai}`);
             break;
-        case player === ai:
+        case (player === ai):
             console.log(`Draw - ${player} vs ${ai}`);
             break;
         default:
