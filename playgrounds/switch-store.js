@@ -17,7 +17,8 @@ Con mi computadora puedo programar usando JavaScript
 En mi celular puedo aprender usando la app de Platzi
 ¡Hay un cable en mi bota!
 Artículo no encontrado */
-switch (true) {
+function solution(article) {
+  switch (true) {
     case article === "computadora":
       return "Con mi computadora puedo programar usando JavaScript";
     case article === "celular":
@@ -27,3 +28,4 @@ switch (true) {
     default:
       return "Artículo no encontrado";
   }
+}
